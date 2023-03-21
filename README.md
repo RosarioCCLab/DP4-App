@@ -27,8 +27,6 @@ If the executable is missing or not created yet, the `dp4plus.py` shortcut can g
 
 
 
-
-
 >> <picture>
- ![1](https://user-images.githubusercontent.com/118339488/226714670-49979b96-885f-47c8-add7-4400244ebe00.png)
+ <img alt="Show" src="https://user-images.githubusercontent.com/118339488/226717260-a4139596-0d8d-4b5f-b06c-ca1cf6b531be.png" width="192" height="237"/>
 </picture>
