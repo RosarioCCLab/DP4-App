@@ -11,3 +11,8 @@ import subprocess
 
 subprocess.run('pip install dp4plus-app') 
 
+try: 
+  subprocess.run('sudo apt-get update')
+  subprocess.run('sudo apt-get install python3-tk')
+
+ except: pass
