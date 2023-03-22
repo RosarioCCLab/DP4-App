@@ -28,7 +28,7 @@ If the programme is installed via command line, it can be excuted in the same co
 
 In case [DP4+App_Installer](https://raw.githubusercontent.com/RosarioCCLab/DP4plus-App/main/dp4plus-installer.py) is used, the programme can be run also by command line or by doble click in the shortcut (`dp4plus.py`) that has been created on your desktop.
 
-If the executable is missing or not created yet, the `dp4plus.py` shortcut can generated using command line: 
+If the executable is missing or not created yet, the `dp4plus.py` shortcut can be generated using command line: 
 > `dp4plus-exe`
 
 
