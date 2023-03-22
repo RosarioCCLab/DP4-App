@@ -33,7 +33,7 @@ If the executable is missing or not created yet, the `dp4plus.py` shortcut can b
 
 
 ### User Guide and Examples
-[DP4+ App user guide](https://github.com/RosarioCCLab/DP4plus-App/blob/main/UserGuide.pdf) is available in this repository and also inside the programme finding the `User Guide` button. Along with it, you can find a corroborated case study to use as an example and learn how to use the tool. 
+[DP4+ App user guide](https://github.com/RosarioCCLab/DP4plus-App/blob/main/UserGuide.pdf) is available in this repository and also inside the programme finding the `User Guide` button. Along with it, you can find a corroborated study case to use as an example for learning how to use the tool. 
 
 >> <picture>
 <img alt="Show" src=https://user-images.githubusercontent.com/118339488/227007210-463ec618-7067-4e88-ba7e-6b00fafbf388.png width="477.5" height="220"/>
