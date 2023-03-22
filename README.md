@@ -32,7 +32,7 @@ If the executable is missing or not created yet, the `dp4plus.py` shortcut can g
 > `dp4plus-exe`
 
 
-## User Guide and Examples
+### User Guide and Examples
 [DP4+ App user guide](https://github.com/RosarioCCLab/DP4plus-App/blob/main/UserGuide.pdf) is available in this repository and also inside the programme finding the `User Guide` button. Along with it, you can find a corroborated case study to use as an example and learn how to use the tool. 
 
 >> <picture>
