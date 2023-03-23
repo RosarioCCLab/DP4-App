@@ -53,3 +53,5 @@ In case you find a faulty operation of **DP4+ App**, please report your situatio
 
 ###### You can also comment in this repository, but know we check the emails more frequently
 
+### FAQ
+gfasgfdsaf
