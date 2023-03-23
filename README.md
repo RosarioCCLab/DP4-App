@@ -13,9 +13,9 @@ To carry out a calculation, you must have the one-dimensional spectrum of C and/
 The theory level used in the Gaussian calculations must match the level used in the **DP4+ App**. Therefore, the software offers 24 DP4+ levels, 36 MM-DP4+ levels and in case this is not enough, the possibility to parameterize your own level with Custom DP4+. For more details on available functions and levels, access the [DP4+ App user guide](https://github.com/RosarioCCLab/DP4plus-App/blob/main/UserGuide.pdf)
 
 ### Installation Requirements 
-**DP4+ App** needs python 3.8 or later to work. Find it in <https://www.python.org/downloads/>
+**DP4+ App** needs python 3.8 or later to work. Find it in <https://www.python.org/downloads/> .
 
-Be aware to anable Python to your oparated system PATH (see the green box bellow)
+Be aware to anable Python to your oparated system PATH (see the green box bellow) for a correct usage. 
 
 >> <picture>
 <img alt="Show" src=https://user-images.githubusercontent.com/118339488/227255604-00cdfa72-6613-4f15-b2d6-08d2880a0899.png width="250" height="155"/>
