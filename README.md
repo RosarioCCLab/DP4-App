@@ -15,6 +15,12 @@ The theory level used in the Gaussian calculations must match the level used in 
 ### Installation Requirements 
 **DP4+ App** needs python 3.8 or later to work. Find it in <https://www.python.org/downloads/>
 
+Be aware to anable Python to your oparated system PATH (see the green box bellow)
+
+>> <picture>
+<img alt="Show" src=https://user-images.githubusercontent.com/118339488/227255604-00cdfa72-6613-4f15-b2d6-08d2880a0899.png width="250" height="155"/>
+</picture>
+
 The programme can be installed in two ways:
 * using the operating system console with the command: 
 > `pip install dp4plus-app` 
