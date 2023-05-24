@@ -16,7 +16,7 @@ try:
 except: pass
 
 try: 
-  subprocess.run('sudo apt-get install python3-pip')
+  subprocess.run('sudo apt-get install python-pip')
   subprocess.run('sudo apt-get install python-tk')
 except: pass
 
