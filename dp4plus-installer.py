@@ -14,13 +14,16 @@ operating_system = platform.system()
 import subprocess, os, shutil
 
 if 'Windows' in operating_system: 
-  subprocess.run('pip install --upgrade pip)
+  subprocess.run('pip install --upgrade pip')
+  subprocess.run('pip install --upgrade dp4plus-app') 
                  
 elif 'Linux' in operating_system: 
-  subprocess.run('sudo apt-get install python-pip')
-  subprocess.run('sudo apt-get install python-tk')
+  os.system('sudo apt-get install python3-pip')
+  os.system('sudo apt-get install python3-tk')
+  os.system('pip install --upgrade dp4plus-app') 
 
 #-----------------------------------------------------------------
+
 subprocess.run('pip install --upgrade dp4plus-app') 
 
 def create_exe():
