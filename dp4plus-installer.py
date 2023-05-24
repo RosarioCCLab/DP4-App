@@ -11,9 +11,11 @@ import subprocess, os, shutil
 import tkinter as tk
 
 try: 
-  subprocess.run('sudo apt-get update')
   subprocess.run('sudo apt-get install python3-tk')
+except: pass
 
+try: 
+  subprocess.run('sudo apt-get install python-tk')
 except: pass
 
 subprocess.run('pip install --upgrade dp4plus-app') 
@@ -26,14 +28,10 @@ def create_exe():
     shutil.copy(exe, desktop)
     return 
 
-
-
 print ('Creating direct access "dp4plus.exe" . . .')
 create_exe()
 
-
 #-----------------------------------------------------------------
-
 
 byby = tk.Tk()
 byby.wm_title("DP4+ App")
