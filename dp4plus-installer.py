@@ -7,19 +7,20 @@ Created on Tue Mar 21 14:45:03 2023
 This is a helper script to install a PyPI module, designed for users who are not familiar with operating system command line usage.
 """
 
+import platform
+operating_system = platform.system()
+
+#-----------------------------------------------------------------
 import subprocess, os, shutil
-import tkinter as tk
 
-try: 
-  subprocess.run('sudo apt-get install python3-pip')
-  subprocess.run('sudo apt-get install python3-tk')
-except: pass
-
-try: 
+if 'Windows' in operating_system: 
+  subprocess.run('pip install --upgrade pip)
+                 
+elif 'Linux' in operating_system: 
   subprocess.run('sudo apt-get install python-pip')
   subprocess.run('sudo apt-get install python-tk')
-except: pass
 
+#-----------------------------------------------------------------
 subprocess.run('pip install --upgrade dp4plus-app') 
 
 def create_exe():
@@ -34,7 +35,7 @@ print ('Creating direct access "dp4plus.exe" . . .')
 create_exe()
 
 #-----------------------------------------------------------------
-
+import tkinter as tk
 byby = tk.Tk()
 byby.wm_title("DP4+ App")
 
