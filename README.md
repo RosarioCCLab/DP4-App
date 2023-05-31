@@ -25,7 +25,7 @@ Be aware to anable Python to your oparated system PATH (see the green box bellow
 * using the operating system (OS) console with the command: 
 > `pip install dp4plus-app` 
 
-* running the following script [DP4+App_Installer](https://github.com/RosarioCCLab/DP4plus-App/blob/main/dp4plus-installer.py) (Save the code with right click on the website screen -> 'save as').
+* running the following script [DP4+App_Installer](https://github.com/RosarioCCLab/DP4plus-App/blob/main/dp4plus-installer.py) (Save the code opening `raw` and right click on the website screen -> 'save as').
 
 
 ###### Linux (Ubuntu) users be aware that Python module *tkinter* is not installed with `pip` in your OS. In case your want to install **DP4+ App** by command line, make sure to also install tk with  > `sudo apt-get install python3-tk` . The ones using the installer this trouble is already solved in the script.
@@ -35,7 +35,7 @@ Be aware to anable Python to your oparated system PATH (see the green box bellow
 If the programme is installed via command line, it can be excuted in the same console using: 
 > `dp4plus`
  
-In case [DP4+App_Installer](https://raw.githubusercontent.com/RosarioCCLab/DP4plus-App/main/dp4plus-installer.py) is used, the programme can be run also by command line or by doble click in the shortcut (`dp4plus.py`) that has been created on your desktop.
+In case [DP4+App_Installer](https://github.com/RosarioCCLab/DP4plus-App/blob/main/dp4plus-installer.py) is used, the programme can be run also by command line or by doble click in the shortcut (`dp4plus.py`) that has been created on your desktop.
 
 If the executable is missing or not created yet, the `dp4plus.py` shortcut can be generated using command line: 
 > `dp4plus-exe`
