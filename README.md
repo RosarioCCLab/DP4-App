@@ -10,7 +10,7 @@
 ### Functionalities
 The **DP4+ App** calculation methods determine probability of correlation between experimental information and two or more sets of calculated magnetic tensors from a group of candidate molecules in study. Probabilities are determined using raw as well as scaled data, following the mathematical formalism of Bayesian methods. 
 To carry out a calculation, you must have the one-dimensional spectrum of C and/or H of your molecule under study and the Gaussian "nmr" calculations of its plausible isomers (candidates).
-The theory level used in the Gaussian calculations must match the level used in the **DP4+ App**. Therefore, the software offers 24 DP4+ levels, 36 MM-DP4+ levels and in case this is not enough, the possibility to parameterize your own level with Custom DP4+. For more details on available functions and levels, access the [DP4+ App user guide](https://raw.githubusercontent.com/RosarioCCLab/DP4plus-App/main/dp4plus-installer.py?token=GHSAT0AAAAAACDCBSHJQ4OY7SEOWWANY3YMZDOML6A)
+The theory level used in the Gaussian calculations must match the level used in the **DP4+ App**. Therefore, the software offers 24 DP4+ levels, 36 MM-DP4+ levels and in case this is not enough, the possibility to parameterize your own level with Custom DP4+. For more details on available functions and levels, access the [DP4+ App user guide](https://github.com/RosarioCCLab/DP4plus-App/blob/main/UserGuide.pdf)
 
 ### Installation Requirements 
 **DP4+ App** needs python 3.8 or later to work. Find it in <https://www.python.org/downloads/> .
@@ -25,7 +25,7 @@ Be aware to anable Python to your oparated system PATH (see the green box bellow
 * using the operating system (OS) console with the command: 
 > `pip install dp4plus-app` 
 
-* running the following script [DP4+ App user guide](https://raw.githubusercontent.com/RosarioCCLab/DP4plus-App/main/dp4plus-installer.py?token=GHSAT0AAAAAACDCBSHJQ4OY7SEOWWANY3YMZDOML6A) (Save the code with right click on the website screen -> 'save as').
+* running the following script [DP4+App_Installer](https://github.com/RosarioCCLab/DP4plus-App/blob/main/dp4plus-installer.py) (Save the code with right click on the website screen -> 'save as').
 
 
 ###### Linux (Ubuntu) users be aware that Python module *tkinter* is not installed with `pip` in your OS. In case your want to install **DP4+ App** by command line, make sure to also install tk with  > `sudo apt-get install python3-tk` . The ones using the installer this trouble is already solved in the script.
