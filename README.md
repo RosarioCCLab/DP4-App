@@ -22,11 +22,10 @@ Be aware to anable Python to your oparated system PATH (see the green box bellow
 </picture>
 
 **DP4+ App** can be installed in two ways:
-* using the operating system (OS) console with the command: 
-> `pip install dp4plus-app` 
-
 * running the following script [DP4+App_Installer](https://github.com/RosarioCCLab/DP4plus-App/blob/main/dp4plus-installer.py) (Save the code opening `raw` and right click on the website screen -> 'save as').
 
+* using the operating system (OS) console with the command: 
+> `pip install dp4plus-app` 
 
 ###### Linux (Ubuntu) users be aware that Python module *tkinter* is not installed with `pip` in your OS. In case your want to install **DP4+ App** by command line, make sure to also install tk with  > `sudo apt-get install python3-tk` . The ones using the installer this trouble is already solved in the script.
 
