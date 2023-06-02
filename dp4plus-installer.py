@@ -24,8 +24,6 @@ elif 'Linux' in operating_system:
 
 #-----------------------------------------------------------------
 
-subprocess.run('pip install --upgrade dp4plus-app') 
-
 def create_exe():
     '''Creates a direc acces executable file in the user desktop'''
     desktop = os.path.normpath(os.path.expanduser("~/Desktop"))
