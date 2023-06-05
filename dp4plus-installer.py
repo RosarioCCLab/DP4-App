@@ -13,7 +13,8 @@ operating_system = platform.system()
 #-----------------------------------------------------------------
 import subprocess, os, shutil
 
-if 'Windows' in operating_system: 
+if ('Windows' in operating_system or 
+   'Darwin' in operating_system): 
   subprocess.run('pip install --upgrade pip')
   subprocess.run('pip install --upgrade dp4plus-app') 
                  
