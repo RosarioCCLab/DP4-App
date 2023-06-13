@@ -21,8 +21,8 @@ if ('Windows' in operating_system or
       subprocess.run('pip3 install --upgrade dp4plus-app')
       
 elif 'Linux' in operating_system: 
-  os.system('sudo apt-get install python3-pip')
-  os.system('sudo apt-get install python3-tk')
+  os.system('sudo apt install python3-pip')
+  os.system('sudo apt install python3-tk')
   os.system('pip install --upgrade dp4plus-app') 
 
 #-----------------------------------------------------------------
