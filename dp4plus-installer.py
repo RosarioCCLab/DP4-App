@@ -35,7 +35,7 @@ def create_exe():
     shutil.copy(exe, desktop)
     return 
 
-print ('Creating direct access "dp4plus.exe" . . .')
+print ('\n\n\n\n\nCreating direct access "dp4plus.exe" . . .\n\n\n\n\n\n')
 create_exe()
 
 #-----------------------------------------------------------------
