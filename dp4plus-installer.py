@@ -16,10 +16,8 @@ import subprocess, os, shutil
 if ('Windows' in operating_system or 
    'Darwin' in operating_system): 
    try:
-      subprocess.run('pip install --upgrade pip')
       subprocess.run('pip install --upgrade dp4plus-app')
    else:
-      subprocess.run('pip3 install --upgrade pip')
       subprocess.run('pip3 install --upgrade dp4plus-app')
       
 elif 'Linux' in operating_system: 
