@@ -17,7 +17,7 @@ if ('Windows' in operating_system or
    'Darwin' in operating_system): 
    try:
       subprocess.run('pip install --upgrade dp4plus-app')
-   else:
+   except:
       subprocess.run('pip3 install --upgrade dp4plus-app')
       
 elif 'Linux' in operating_system: 
