@@ -11,14 +11,23 @@ import platform
 operating_system = platform.system()
 
 #-----------------------------------------------------------------
+import platform
+operating_system = platform.system()
+
+#-----------------------------------------------------------------
 import subprocess, os, shutil
 
-if ('Windows' in operating_system or 
-   'Darwin' in operating_system): 
+if 'Windows' in operating_system: 
    try:
       subprocess.run('pip install --upgrade dp4plus-app')
    except:
       subprocess.run('pip3 install --upgrade dp4plus-app')
+
+if 'Darwin' in operating_system:
+   try:
+      subprocess.run(['pip','install','--upgrade','dp4plus-app'])
+   except:
+      subprocess.run(['pip3','install','--upgrade','dp4plus-app'])
       
 elif 'Linux' in operating_system: 
   os.system('sudo apt install python3-pip')
