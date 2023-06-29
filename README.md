@@ -94,8 +94,8 @@ If you encounter any issues or experience faulty operations while using the *DP4
 
   To resolve this issue, you have a couple of options:
 
-  Reinstall Python, ensuring that you enable the option to add it to your computer's PATH during the installation process. This error is displayed when the pip or other command is not recognized in the terminal. It typically occurs when the executable modules required are not set in the PATH list.
+  Reinstall Python, ensuring that you enable the option to add it to your computer's PATH during the installation process. 
   
   Manually add the appropriate directories to the PATH environment variable on your computer. This will involve modifying the system settings and adding the paths of the required executable modules. You can find step-by-step instructions on how to do this in the following resources: [Link 1](https://realpython.com/add-python-to-path/) y [Link 2](https://www.mygreatlearning.com/blog/add-python-to-path/)
 
-3. ¿ Three ?
+3. ¿ ... ?
