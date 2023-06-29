@@ -5,7 +5,7 @@
 Experience the convenience and efficiency of DP4+ App as it streamlines the entire workflow of parameterized calculations. From data input to result generation, this powerful tool simplifies the process, ensuring accurate and reliable probabilistic analyses.
 
 >> <picture>
- <img alt="Show" src="https://user-images.githubusercontent.com/118339488/226717260-a4139596-0d8d-4b5f-b06c-ca1cf6b531be.png" width="192" height="237"/>
+ <img alt="Show" src="https://github.com/Sarotti-Lab/DP4plus-App/assets/101182775/a459f018-78c8-4e43-b7de-0dd92eb40a48 " width="192" height="237"/>
 </picture>
 
 ## Characteristics
@@ -83,6 +83,19 @@ If you encounter any issues or experience faulty operations while using the *DP4
 ###### While you have the option to comment in this repository, we recommend using the email addresses mentioned above, as we monitor them more frequently.
 
 ### F.A.Q.
-* ¿ One ?
-* ¿ Two ?
-* ¿ Three ?
+1. How can I uninstall DP4+App ? 
+
+  In your terminal run the code:
+  > `pip uninstall dp4plus_app` or `pip3 uninstall dp4plus_app`
+  > 
+2. Why I get this error: `pip is not recognized as an internal or external command, operable program or batch file.` ?
+ 
+  This error occurs when the pip command or any other command is not recognized in the terminal. It typically happens when the required executable modules are not included in the system's PATH list.
+
+  To resolve this issue, you have a couple of options:
+
+  Reinstall Python, ensuring that you enable the option to add it to your computer's PATH during the installation process. This error is displayed when the pip or other command is not recognized in the terminal. It typically occurs when the executable modules required are not set in the PATH list.
+  
+  Manually add the appropriate directories to the PATH environment variable on your computer. This will involve modifying the system settings and adding the paths of the required executable modules. You can find step-by-step instructions on how to do this in the following resources: [Link 1](https://realpython.com/add-python-to-path/) y [Link 2](https://www.mygreatlearning.com/blog/add-python-to-path/)
+
+3. ¿ Three ?
