@@ -11,9 +11,7 @@ The **DP4+App** is a powerful tool designed to assist researchers in the structu
 
 This is a comprehensive software was designed to facilitate DP4+ and MM-DP4+ calculations. With its user-friendly graphical interface, users can seamlessly handle multiple Gaussian calculations and leverage automated data processing for accurate probabilistic analysis. The software offers the flexibility to perform Custom-DP4+ calculations, enabling parameterization of theory levels as per individual requirements.
 
->> <picture>
  <img alt="Show" src="https://github.com/Sarotti-Lab/DP4plus-App/assets/101182775/a459f018-78c8-4e43-b7de-0dd92eb40a48 " width="192" height="237"/>
-</picture>
 
 ## Characteristics
 ### Functionalities
@@ -33,9 +31,7 @@ Please make sure to add Python to your system's PATH environment variable to ens
 
 2. During the installation process, you will come across an option called "Add Python to PATH" or something similar. Make sure to check this option before proceeding with the installation. 
 
->> <picture>
 <img alt="Show" src=https://user-images.githubusercontent.com/118339488/227255604-00cdfa72-6613-4f15-b2d6-08d2880a0899.png width="250" height="155"/>
-</picture>
 
 3. By enabling this option, Python will be added to your system's PATH, allowing you to run Python commands and scripts from any location in your command prompt or terminal.
 
@@ -71,9 +67,7 @@ If the executable is missing or not created yet, the `dp4plus.exe` shortcut can 
 ### User Guide and Examples
 To help you get started with the DP4+ App and learn how to use its features effectively, we provide a comprehensive [DP4+ App user guide](https://github.com/RosarioCCLab/DP4plus-App/blob/main/UserGuide.pdf). It is available in the repository and can also be accessed directly within the program by clicking on the `User Guide` button.
 
->> <picture>
-<img alt="Show" src=https://user-images.githubusercontent.com/118339488/227007210-463ec618-7067-4e88-ba7e-6b00fafbf388.png width="477.5" height="220"/>
-</picture>
+<img alt="Show" src=https://github.com/Sarotti-Lab/DP4plus-App/assets/101182775/fd28fd39-309a-4346-8009-763b82d66926.png width="477.5" height="220"/>
 
 The user guide offers detailed instructions, explanations, and step-by-step tutorials to assist you in navigating the DP4+ App and making the most of its functionalities. It serves as a valuable resource to enhance your understanding of the tool and perform accurate probabilistic analyses.
 
