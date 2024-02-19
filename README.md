@@ -4,7 +4,7 @@ This repository contains the tool presented in the publication titled **DP4+App:
 
 For all work using **DP4+App** please cite the primary publication: 
 
-* _J. Nat. Prod. 2023, 86, 10, 2360–2367 . https://doi.org/10.1021/acs.jnatprod.3c00566
+* J. Nat. Prod. 2023, 86, 10, 2360–2367 . https://doi.org/10.1021/acs.jnatprod.3c00566
 
 ## A tool for DP4+, MM-DP4+ and Custom DP4+ probability calculation
 The **DP4+App** is a powerful tool designed to assist researchers in the structure elucidation process by balancing computational cost and predictive capacity using DP4+ factors analysis and automation. It provides valuable insights and streamlines the decision-making process, making it a valuable asset for chemists and researchers working in natural product chemistry and related fields.
