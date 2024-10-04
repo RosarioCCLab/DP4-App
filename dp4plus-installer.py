@@ -8,59 +8,89 @@ This is a helper script to install a PyPI module, designed for users who are not
 """
 
 import platform
+import subprocess
+import os
+import shutil
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLayout
+
 operating_system = platform.system()
 
 #-----------------------------------------------------------------
-import platform
-operating_system = platform.system()
 
-#-----------------------------------------------------------------
-import subprocess, os, shutil
+# Detectar el sistema operativo y realizar la instalación del paquete dp4plus-app
+if 'Windows' in operating_system:
+    try:
+        subprocess.run('pip install --upgrade dp4plus-app', shell=True)
+    except:
+        subprocess.run('pip3 install --upgrade dp4plus-app', shell=True)
 
-if 'Windows' in operating_system: 
-   try:
-      subprocess.run('pip install --upgrade dp4plus-app')
-   except:
-      subprocess.run('pip3 install --upgrade dp4plus-app')
+elif 'Darwin' in operating_system:
+    try:
+        subprocess.run(['pip', 'install', '--upgrade', 'dp4plus-app'])
+    except:
+        subprocess.run(['pip3', 'install', '--upgrade', 'dp4plus-app'])
 
-if 'Darwin' in operating_system:
-   try:
-      subprocess.run(['pip','install','--upgrade','dp4plus-app'])
-   except:
-      subprocess.run(['pip3','install','--upgrade','dp4plus-app'])
-      
-elif 'Linux' in operating_system: 
-  os.system('sudo apt install python3-pip')
-  os.system('sudo apt install python3-tk')
-  os.system('pip install --upgrade dp4plus-app') 
+elif 'Linux' in operating_system:
+    os.system('sudo apt install python3-pip')
+    os.system('pip install --upgrade dp4plus-app')
 
 #-----------------------------------------------------------------
 
 def create_exe():
-    '''Creates a direc acces executable file in the user desktop'''
+    '''Creates a direct access executable file on the user's desktop'''
     desktop = os.path.normpath(os.path.expanduser("~/Desktop"))
     exe = shutil.which("dp4plus")
     
-    shutil.copy(exe, desktop)
-    return 
+    if exe:
+        shutil.copy(exe, desktop)
+        return True
+    return False
 
-print ('\n\n\n\n\nCreating direct access "dp4plus.exe" . . .\n\n\n\n\n\n')
-create_exe()
+# Intentar crear el acceso directo
+print('\n\n\n\n\nCreating direct access "dp4plus.exe" . . .\n\n\n\n\n\n')
+success = create_exe()
 
 #-----------------------------------------------------------------
-import tkinter as tk
-byby = tk.Tk()
-byby.wm_title("DP4+ App")
 
-tk.Label(byby,text = u' Procces completed \u2713', 
-         font = ("Arial Black", "12")).grid(row=0,padx=10, pady=(10,0))
-tk.Label(byby,text ='DP4+ App has been installed successfully', 
-         font = ("Arial Bold", "10")).grid(row=1,padx=10, pady=5)
-tk.Label(byby,text ='Run it whith dp4plus.exe on your desktop', 
-         font = ("Arial Bold", "10")).grid(row=2,padx=10, pady=5)
-tk.Label(byby,text ='Press Exit to finish', 
-         font = ("Arial Bold", "10")).grid(row=3,padx=10, pady=5)
-tk.Button(byby, text='Exit', 
-          command= byby.destroy).grid(row=4, pady=(5,10))
+# Crear una ventana con PyQt5
+class AppWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle('DP4+ App')
 
-byby.mainloop()
+        # Crear los widgets de la interfaz
+        layout = QVBoxLayout()
+
+        label1 = QLabel(u'Process completed \u2713')
+        label1.setStyleSheet("font-weight: bold; font-size: 14px;")
+        layout.addWidget(label1)
+
+        label2 = QLabel('DP4+ App has been installed successfully')
+        layout.addWidget(label2)
+
+        if success:
+            label3 = QLabel('Run it with dp4plus.exe on your desktop')
+        else:
+            label3 = QLabel('Executable not found. Please check installation.')
+        layout.addWidget(label3)
+
+        label4 = QLabel('Press Exit to finish')
+        layout.addWidget(label4)
+
+        exit_button = QPushButton('Exit')
+        exit_button.clicked.connect(self.close)
+        layout.addWidget(exit_button)
+
+        self.setLayout(layout)
+
+#-----------------------------------------------------------------
+
+# Inicializar la aplicación PyQt5
+app = QApplication([])
+
+# Crear la ventana principal
+window = AppWindow()
+window.show()
+
+# Ejecutar el loop principal de la aplicación
+app.exec_()
