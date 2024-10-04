@@ -9,7 +9,7 @@ For all work using **DP4+App** please cite the primary publication:
 ## A tool for DP4+, MM-DP4+ and Custom DP4+ probability calculation
 The **DP4+App** is a powerful tool designed to assist researchers in the structure elucidation process by balancing computational cost and predictive capacity using DP4+ factors analysis and automation. It provides valuable insights and streamlines the decision-making process, making it a valuable asset for chemists and researchers working in natural product chemistry and related fields.
 
-This is a comprehensive software was designed to facilitate DP4+ and MM-DP4+ calculations. With its user-friendly graphical interface, users can seamlessly handle multiple Gaussian calculations and leverage automated data processing for accurate probabilistic analysis. The software offers the flexibility to perform Custom-DP4+ calculations, enabling parameterization of theory levels as per individual requirements.
+This is a comprehensive software was designed to facilitate DP4+ and MM-DP4+ calculations. With its user-friendly graphical interface, you can handle multiple Gaussian calculations and leverage automated data processing for accurate probabilistic analysis. The software also offers the flexibility to perform Custom-DP4+ calculations, enabling parameterization of theory levels as per individual requirements.
 
  <img alt="Show" src="https://github.com/Sarotti-Lab/DP4plus-App/assets/101182775/a459f018-78c8-4e43-b7de-0dd92eb40a48 " width="192" height="237"/>
 
@@ -18,9 +18,9 @@ This is a comprehensive software was designed to facilitate DP4+ and MM-DP4+ cal
 
 The **DP4+ App** utilizes advanced calculation methods to determine the probability of correlation between experimental information and two or more sets of calculated magnetic tensors from a group of candidate molecules under study. These probabilities are determined using both raw and scaled data, following the mathematical formalism of Bayesian methods.
 
-To perform a calculation, you need to provide the one-dimensional spectrum of the carbon (C) and/or hydrogen (H) atoms of the molecule you are studying, along with the Gaussian "nmr" calculations of its plausible isomers (candidates).
+To perform a calculation, you need to provide carbon (C<sup>13</sup>) and/or hydrogen (H<sup>1</sup>) atoms one-dimensional NMR spectrum of the molecule you are studying, along with the Gaussian "nmr" calculations of its plausible isomers (candidates).
 
-It is important to note that the theory level used in the Gaussian calculations must match the level used in the DP4+ App. To accommodate various requirements, the software offers a wide range of options, including 24 DP4+ levels, 36 MM-DP4+ levels, and, if needed, the ability to parameterize your own custom level using Custom DP4+. For detailed information about the available functions and levels, please refer to the [DP4+ App user guide](https://github.com/RosarioCCLab/DP4plus-App/blob/main/UserGuide.pdf)
+It is important to note that the theory level used in the Gaussian calculations must match the level used in the DP4+ App. To accommodate various requirements, the software offers a wide range of options, including 24 DP4+ levels, 36 MM-DP4+ levels, and, if needed, the ability to parameterize your own custom level using Custom DP4+. For detailed information about the available functions and levels, please refer to the [DP4+ App User guides and Example](https://github.com/Sarotti-Lab/DP4plus-App/tree/main/UserGuides%20and%20Examples)
 
 ### Installation Requirements 
 To run the DP4+ App, you will need Python 3.8 or a later version. If you don't have Python installed on your system, you can download it from <https://www.python.org/downloads/>.
@@ -67,7 +67,7 @@ If the executable is missing or not created yet, the `dp4plus.exe` shortcut can 
 ### User Guide and Examples
 To help you get started with the DP4+ App and learn how to use its features effectively, we provide a comprehensive [DP4+ App user guide](https://github.com/RosarioCCLab/DP4plus-App/blob/main/UserGuide.pdf). It is available in the repository and can also be accessed directly within the program by clicking on the `User Guide` button.
 
-<img alt="Show" src=https://github.com/Sarotti-Lab/DP4plus-App/assets/101182775/fd28fd39-309a-4346-8009-763b82d66926.png width="477.5" height="220"/>
+<img alt="Show" src=https://github.com/user-attachments/assets/c12bfbaf-661b-49f0-b712-cb390bd286ef width="555" height="559"/>
 
 The user guide offers detailed instructions, explanations, and step-by-step tutorials to assist you in navigating the DP4+ App and making the most of its functionalities. It serves as a valuable resource to enhance your understanding of the tool and perform accurate probabilistic analyses.
 
@@ -99,4 +99,3 @@ If you encounter any issues or experience faulty operations while using the *DP4
   
   Manually add the appropriate directories to the PATH environment variable on your computer. This will involve modifying the system settings and adding the paths of the required executable modules. You can find step-by-step instructions on how to do this in the following resources: [Link 1](https://realpython.com/add-python-to-path/) y [Link 2](https://www.mygreatlearning.com/blog/add-python-to-path/)
 
-3. ¿ ... ?
