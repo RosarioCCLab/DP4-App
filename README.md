@@ -43,7 +43,7 @@ To get started with the **DP4+ App**, you can choose from two installation metho
 
 * **Using the OS Console (Command Line):** Alternatively, you can install the *DP4+App* by executing the following command in your operating system's console (command line):
 
-> `pip install dp4plus-app` 
+> `pip install --upgrade dp4plus-app` 
 
 ###### Linux (Ubuntu) users be aware that Python module *tkinter* is not installed with `pip` in your OS. In case your want to install **DP4+ App** by command line, make sure to also install tk with  > `sudo apt-get install python3-tk` . If you prefer the installer script, this issue is already addressed within it.
 
