@@ -1,17 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 21 14:45:03 2023
-
-@author: Franco, Bruno Agustín 
-
-This is a helper script to install a PyPI module, designed for users who are not familiar with operating system command line usage.
-"""
-
 import platform
 import subprocess
 import os
 import shutil
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLayout
+
 
 operating_system = platform.system()
 
@@ -21,24 +12,27 @@ operating_system = platform.system()
 if 'Windows' in operating_system:
     try:
         subprocess.run('pip install --upgrade dp4plus-app', shell=True)
+        subprocess.run("pip install --upgrade PyQt5", shell = True)
     except:
         subprocess.run('pip3 install --upgrade dp4plus-app', shell=True)
-
-    subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "PyQt5"], check=True)
+        subprocess.run("pip3 install --upgrade PyQt5", shell = True)
 
 elif 'Darwin' in operating_system:
     try:
         subprocess.run(['pip', 'install', '--upgrade', 'dp4plus-app'])
+        subprocess.run(["pip", "install", "--upgrade", "PyQt5"])
     except:
         subprocess.run(['pip3', 'install', '--upgrade', 'dp4plus-app'])
-
-    subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "PyQt5"], check=True)
+        subprocess.run(["pip3", "install", "--upgrade", "PyQt5"])
 
 elif 'Linux' in operating_system:
     os.system('sudo apt install python3-pip')
     os.system('pip install --upgrade dp4plus-app')
 
-    subprocess.run(["sudo", "apt", "install", "-y", "python3-pyqt5"], check=True)
+    try: 
+        subprocess.run("sudo apt install -y python3-pyqt5")
+    except : 
+        subprocess.run("pip install python3-pyqt5")
 
 #-----------------------------------------------------------------
 
@@ -57,7 +51,7 @@ print('\n\n\n\n\nCreating direct access "dp4plus.exe" . . .\n\n\n\n\n\n')
 success = create_exe()
 
 #-----------------------------------------------------------------
-
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLayout
 # Crear una ventana con PyQt5
 class AppWindow(QWidget):
     def __init__(self):
