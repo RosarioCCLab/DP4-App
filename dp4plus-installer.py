@@ -24,15 +24,21 @@ if 'Windows' in operating_system:
     except:
         subprocess.run('pip3 install --upgrade dp4plus-app', shell=True)
 
+    subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "PyQt5"], check=True)
+
 elif 'Darwin' in operating_system:
     try:
         subprocess.run(['pip', 'install', '--upgrade', 'dp4plus-app'])
     except:
         subprocess.run(['pip3', 'install', '--upgrade', 'dp4plus-app'])
 
+    subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "PyQt5"], check=True)
+
 elif 'Linux' in operating_system:
     os.system('sudo apt install python3-pip')
     os.system('pip install --upgrade dp4plus-app')
+
+    subprocess.run(["sudo", "apt", "install", "-y", "python3-pyqt5"], check=True)
 
 #-----------------------------------------------------------------
 
