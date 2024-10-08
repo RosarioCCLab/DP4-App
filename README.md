@@ -23,7 +23,9 @@ To perform a calculation, you need to provide carbon (C<sup>13</sup>) and/or hyd
 It is important to note that the theory level used in the Gaussian calculations must match the level used in the DP4+ App. To accommodate various requirements, the software offers a wide range of options, including 24 DP4+ levels, 36 MM-DP4+ levels, and, if needed, the ability to parameterize your own custom level using Custom DP4+. For detailed information about the available functions and levels, please refer to the [DP4+ App User guides and Example](https://github.com/Sarotti-Lab/DP4plus-App/tree/main/UserGuides%20and%20Examples)
 
 ### Installation Requirements 
-To run the DP4+ App, you will need Python 3.8 or a later version. If you don't have Python installed on your system, you can download it from <https://www.python.org/downloads/>.
+This package is confirmed to work with Python versions between **3.8 and 3.11.9**. The most recent tested version is 3.11.9, which works smoothly across Windows, Linux, and macOS. If you don't have Python installed on your system, you can download it from <https://www.python.org/downloads/>.
+
+######  Please note that Python 3.12 and 3.13 are not supported at the moment. If your system has Python 3.12 or later installed, we highly recommend setting up a virtual environment with Python 3.11.9 or an earlier version. You can consult your most trusted AI assistant for step-by-step guidance on creating virtual environments.
 
 Please make sure to add Python to your system's PATH environment variable to ensure correct usage of the DP4+ App. The following steps explain how to enable Python in your system's PATH:
 
@@ -45,7 +47,7 @@ To get started with the **DP4+ App**, you can choose from two installation metho
 
 > `pip install --upgrade dp4plus-app` 
 
-###### Linux (Ubuntu) users be aware that Python module *tkinter* is not installed with `pip` in your OS. In case your want to install **DP4+ App** by command line, make sure to also install tk with  > `sudo apt-get install python3-tk` . If you prefer the installer script, this issue is already addressed within it.
+###### From version 0.2.8, there is no need to install the *tkinter* module, as the package now uses *PyQt5* for the UI. If you are installing a version prior to 0.2.8 and using Linux (Ubuntu) be aware that Python module *tkinter* is not installed with `pip` in your OS. In case your want to install **DP4+ App** by command line, make sure to also install tk with  > `sudo apt-get install python3-tk` . If you prefer the installer script, this issue is already addressed within it.
 
 Choose the installation method that suits you best, and you'll be ready to use the DP4+ App for your probabilistic analysis needs.
 
@@ -64,8 +66,9 @@ If the executable is missing or not created yet, the `dp4plus.exe` shortcut can 
 > `dp4plus-exe`
 
 
+
 ### User Guide and Examples
-To help you get started with the DP4+ App and learn how to use its features effectively, we provide a comprehensive [DP4+ App user guide](https://github.com/RosarioCCLab/DP4plus-App/blob/main/UserGuide.pdf). It is available in the repository and can also be accessed directly within the program by clicking on the `User Guide` button.
+To help you get started with the DP4+ App and learn how to use its features effectively, we provide a comprehensive [DP4+ App user guide](https://github.com/Sarotti-Lab/DP4plus-App/tree/main/User%20Guides%20and%20Examples). It is available in the repository and can also be accessed directly within the program by clicking on the `User Guide` button.
 
 <img alt="Show" src=https://github.com/user-attachments/assets/c12bfbaf-661b-49f0-b712-cb390bd286ef width="555" height="559"/>
 
